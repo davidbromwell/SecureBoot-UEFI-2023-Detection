@@ -37,13 +37,14 @@ Deployment: Intune Proactive Remediation (Detection script)
 Encoding: ASCII compatible
 
 Detection States
-State	Meaning
-Fully Updated	Secure Boot enabled + UEFICA2023Status = Updated ✅
-Updated - Secure Boot Not Enabled	Status Updated but Secure Boot is off
-Error State	Non-zero error codes, update incomplete
-Secure Boot Disabled	Disabled in firmware
-Certs Present - Awaiting Update	2023 certs in UEFI, status not yet Updated
-In Progress	Update actively underway
-Not Started	No status value found
-Not Applicable - Legacy BIOS	Non-UEFI device
-Needs Review	Partial or unrecognized state
+| State                             | Meaning                                            |
+| --------------------------------- | -------------------------------------------------- |
+| Fully Updated                     | Secure Boot enabled + UEFICA2023Status = Updated   |
+| Updated - Secure Boot Not Enabled | Status Updated but Secure Boot is off              |
+| Error State                       | Non-zero error codes, update incomplete            |
+| Secure Boot Disabled              | Disabled in firmware                               |
+| Certs Present - Awaiting Update   | 2023 certs in UEFI, status not yet Updated         |
+| In Progress                       | Update actively underway                           |
+| Not Started                       | No status value found                              |
+| Not Applicable - Legacy BIOS      | Non-UEFI device                                    |
+| Needs Review                      | Partial or unrecognized state                      |
